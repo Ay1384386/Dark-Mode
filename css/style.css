@@ -1,0 +1,42 @@
+:root {
+  --background: #ffffff;
+  --text: #333333;
+  --heading-font: 'Roboto', sans-serif;
+  --body-font: 'Arial', sans-serif;
+}
+
+[data-theme="dark"] {
+  --background: #333333;
+  --text: #ffffff;
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--body-font);
+  font-size: 16px;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: var(--text);
+  color: var(--background);
+  cursor: pointer;
+  font-family: var(--body-font);
+}
